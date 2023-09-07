@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(16, 223, 223, 0.192);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+.btn{
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    color: rgb(230, 218, 218);
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.btn:hover{
+    opacity: 0.9;
+    background-color: bisque;
+    color: brown;
+}
+.btn{
+    outline: none;
+}
