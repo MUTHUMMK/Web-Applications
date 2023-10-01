@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 251, 245);
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 5px 5%;
+   background-color: aqua;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-left div{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+.nav-left div span{
+    color: blue;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.nav-left ul li{
+    display: inline-block;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.nav-left ul li img{
+    width: 30px;
+    margin: 0 15px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-right .search-box{
+    border: 1px solid beige;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 350px;
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.nav-right .search-box img{
+    width: 30px;
+    border-radius: 20px;
+}
+.nav-right .search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    overflow: hidden;
+}
+.user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+.left-sidebar{
+
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self:flex-start;
+    
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    color: gray;
+
+    
+}
+.main-sidebar{
+    flex-basis: 47%;
+}
+
+.left-sidebar .imp-links a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+.left-sidebar .imp-links a img{
+    width: 35px;
+    margin-right: 20px;
+
+}
+.left-sidebar .imp-links a:last-child{
+    color: blueviolet;
+}
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    color: rgb(76, 52, 52);
+}
+.shortcut-links a img{
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 40px;
+}
+.shortcut-links p{
+    text-transform: capitalize;
+    margin: 20px 0;
+   
+}
+
+
+.sidebar-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.sidebar-tittle a{
+    text-decoration: none;
+}
+
+.event{
+    display: flex;
+
+    margin-top: 20px;
+  
+    font-size: 15px;
+}
+.event .left-event{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);  
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top:10px ;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.event .right-event p{
+    font-size: 13px;
+}
+.event .right-event a{
+    text-decoration: none;
+    font-size: 13px;
+    color: blueviolet;
+} 
+.event .left-event span{
+    position: absolute;
+    border: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+.side-img{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.online-list .online{
+    margin-right: 15px;
+}
+.online-list img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.online-list .online::after{
+    top: unset;
+    bottom: 10px;
+}
+
+.tittle{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 40px;
+    border: none;
+    font-weight: 900;
+    background-image: linear-gradient(red,red);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text ;
+    background-position:-150px 0;
+    animation: back 2s linear infinite alternate;
+}@keyframes back{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+.story-gallery{
+   position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.story-gallery .story{
+    display: flex;
+    padding-top: 32%;
+    flex-basis: 18%;
+    position: relative;
+    padding-top: 20px;
+    background-position: center;
+    border-radius: 10px;background-size: cover;
+    background-repeat:no-repeat;
+    height: 150px;
+    width: 100px;
+
+
+background-image: url(men-4203903_1920.jpg);
+}
+.story-gallery .story-1{
+    background-image: url(corgi-4415649_1920.jpg)  ;
+   
+    display: flex;
+    padding-top: 32%;
+    flex-basis: 18%;
+    position: relative;
+    padding-top: 20px;
+    background-position: center;
+    border-radius: 10px;background-size: cover;
+    background-repeat:no-repeat;
+    height: 150px;
+    width: 100px;
+    
+    
+}
+.story-gallery .story-2{
+    background-image: url(mountaineering-455338_1920.jpg) ;
+    display: flex;
+    padding-top: 32%;
+    flex-basis: 18%;
+    position: relative;
+    padding-top: 20px;
+    background-position: center;
+    border-radius: 10px;background-size: cover;
+    background-repeat:no-repeat;
+    height: 150px;
+    width: 100px; 
+    
+}
+.story-gallery .story-3{
+    background-image: url(men-4203903_1920.jpg);
+    display: flex;
+    padding-top: 32%;
+    flex-basis: 18%;
+    position: relative;
+    padding-top: 20px;
+    background-position: center;
+    border-radius: 10px;background-size: cover;
+    background-repeat:no-repeat;
+    height: 150px;
+    width: 100px;  
+    
+}
+.story-gallery .story-4{
+    background-image: url(photographer-407068_1920.jpg) ;
+    display: flex;
+    padding-top: 32%;
+    flex-basis: 18%;
+    position: relative;
+    padding-top: 20px;
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 150px;
+    width: 100px; 
+    
+}
+
+.story, .story-1, .story-2, .story-3, .story-4 img{
+    position:absolute;
+    top: 10px;
+    left: 5px;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+
+}
+.story p{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: #fff;
+}
